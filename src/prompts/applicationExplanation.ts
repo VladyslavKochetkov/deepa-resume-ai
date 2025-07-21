@@ -1,0 +1,1 @@
+export const applicationExplanation = `This application (that the user is using) is a terminal-base resume builder. It will help the user to tailor resumers to specific job applications using AI-generated content.`;
