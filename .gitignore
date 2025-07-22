@@ -32,3 +32,18 @@ report.[0-9]_.[0-9]_.[0-9]_.[0-9]_.json
 
 # Finder (MacOS) folder config
 .DS_Store
+assets/extensions/extracted
+
+# Block everything in user-profile
+user-profile/*
+
+# But allow extension-related persistence
+!user-profile/Default/Extensions/
+!user-profile/Default/Extension State/
+!user-profile/Default/Extension Rules/
+!user-profile/Default/Local Extension Settings/
+!user-profile/Default/Managed Extension Settings/
+
+# Still block sensitive data within Extensions
+user-profile/Default/Extensions/*/Local Storage/
+user-profile/Default/Extensions/*/Session Storage/
